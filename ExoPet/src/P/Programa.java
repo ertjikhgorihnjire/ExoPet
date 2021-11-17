@@ -10,7 +10,7 @@ public class Programa {
 		Scanner sc = new Scanner(System.in);	/// Variáveis
 		String nome = " ";
 		int idade = 0;
-		oolean check = true;
+		boolean check = true;
 		int dinheiro = 0;
 		ArrayList<Animal> animais = new ArrayList<Animal>();
 		Dono dono;
