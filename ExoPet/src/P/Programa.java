@@ -24,6 +24,7 @@ public class Programa {
 		System.out.print("Digite seu saldo bancário: ");
 		dinheiro = sc.nextInt();
 		
+		System.out.println("Você possui licença?");
 		
 		dono = new Dono(nome, idade, check, dinheiro, animais);		/// Instanciação
 		System.out.println("\n" + "Nome: " + dono.nome);
