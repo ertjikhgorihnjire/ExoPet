@@ -11,7 +11,13 @@ public class Animal {
 		this.nome = nome;
 		this.especie = especie;
 		this.valor = valor;
-		
+	}
+	
+	public void etiqueta(){
+	
+		System.out.println("Nome do Animal: " + nome);
+		System.out.println("Espécie: " + especie);
+		System.out.println("Preço: " + valor);
 	}
 
 }
