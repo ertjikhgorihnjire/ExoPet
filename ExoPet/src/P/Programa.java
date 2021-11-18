@@ -15,11 +15,15 @@ public class Programa {
 		ArrayList<Animal> animais = new ArrayList<Animal>();
 		Dono dono;
 		
+		do{
+
+			System.out.print("Digite sua idade: ");
+			idade = sc.nextInt();
+
+		}while(idade <= 17);
+
 		System.out.print("Digite seu nome: ");
 		nome = sc.nextLine();
-		
-		System.out.print("Digite sua idade: ");
-		idade = sc.nextInt();
 		
 		System.out.print("Digite seu saldo bancário: ");
 		dinheiro = sc.nextInt();
