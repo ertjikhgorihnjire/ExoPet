@@ -11,16 +11,14 @@ public class Programa {
 		String nome = " ";
 		int idade = 0;
 		boolean check = true;
+		String aux = " ";
 		int dinheiro = 0;
 		ArrayList<Animal> animais = new ArrayList<Animal>();
-		Dono dono;
+		Dono dono = new Dono(nome, idade, check, dinheiro, animais);		/// Instanciação;
 		
-		do{
-
-			System.out.print("Digite sua idade: ");
-			idade = sc.nextInt();
-
-		}while(idade <= 17);
+		System.out.print("Digite sua idade: ");
+		idade = sc.nextInt();
+		dono.checkIdade(idade);
 
 		System.out.print("Digite seu nome: ");
 		nome = sc.nextLine();
@@ -28,9 +26,14 @@ public class Programa {
 		System.out.print("Digite seu saldo bancário: ");
 		dinheiro = sc.nextInt();
 		
-		System.out.println("Você possui licença?");
-		
-		dono = new Dono(nome, idade, check, dinheiro, animais);		/// Instanciação
+		System.out.println("Você possui licença? (S/N)");
+		aux = sc.nextLine();
+			
+			if(aux == "n" || aux == "N"){
+				dono.setCheck();
+
+			}
+
 		System.out.println("\n" + "Nome: " + dono.nome);
 		System.out.println("Idade: " + dono.idade);
 		System.out.println("Licença: " + dono.check);			/// Status passagem de dados = ok
