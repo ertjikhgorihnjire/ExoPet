@@ -33,14 +33,25 @@ public class Programa {
 
 			}
 		
-		System.out.println("Lista de Animais: ");
-		System.out.println("------------------------");
-		System.out.println("1 - ");
-;
+		
 		System.out.println("\n" + "Nome: " + dono.nome);
 		System.out.println("Idade: " + dono.idade);
 		System.out.println("Licença: " + dono.check);			/// Status passagem de dados = ok
 		System.out.println("Dinheiro: " + dono.dinheiro);
+		
+		
+		
+		System.out.println("Lista de Animais: ");
+		System.out.println("------------------------");
+		System.out.println("[1] Papagaio // R$4075,99");
+		System.out.println("[2] Girafa // R$8720,99");
+		System.out.println("[3] Elefante // R$10.380,99");
+		System.out.println("[4] Coala // R$2120,99");
+		System.out.println("[5] Crocodilo // R$7400,99");
+		System.out.println("[6] Raposa // R$780,99");
+		System.out.println("[7] Coruja // R$320,99");
+		System.out.println("[8] Salamandra // R$100,99");
+		System.out.println("[9] Corvo // R$920,99");
 		
 		sc.close();
 	}
