@@ -13,7 +13,6 @@ public class Programa {
 		boolean check = true;
 		String aux = " ";
 		int dinheiro = 0;
-		ArrayList<Animal> animais = new ArrayList<Animal>();
 		Dono dono = new Dono(nome, idade, check, dinheiro, animais);		/// Instanciação;
 		
 		System.out.print("Digite sua idade: ");
@@ -33,7 +32,11 @@ public class Programa {
 				dono.setCheck();
 
 			}
-
+		
+		System.out.println("Lista de Animais: ");
+		System.out.println("------------------------");
+		System.out.println("1 - ");
+;
 		System.out.println("\n" + "Nome: " + dono.nome);
 		System.out.println("Idade: " + dono.idade);
 		System.out.println("Licença: " + dono.check);			/// Status passagem de dados = ok
